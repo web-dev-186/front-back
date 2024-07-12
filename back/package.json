@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "build": "npm install && npm install --prefix ./front && npm run build --prefix ./front"
+  
   },
   "keywords": [],
   "author": "",
