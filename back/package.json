@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "concurrently \"nodemon index.js\" \"cd front && npm run dev\"",
     "build": "npm install && npm install --prefix ./front && npm run build --prefix ./front"
-  
   },
   "keywords": [],
   "author": "",
@@ -30,6 +29,7 @@
     "passport": "^0.7.0",
     "passport-google-oauth20": "^2.0.0",
     "stripe": "^16.2.0",
-    "validator": "^13.7.0"
+    "validator": "^13.7.0",
+    "concurrently": "^7.0.0" // Ensure this matches the latest version
   }
 }
